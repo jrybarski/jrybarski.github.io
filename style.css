@@ -13,7 +13,7 @@
 }
 
 body {
-  height: 100vh; /* Ustawiamy wysokość na 100% wysokości okna */
+  height: 960px; /* Ustawiamy wysokość na 100% wysokości okna */
   margin: 0; /* Usuwamy marginesy */
   background-color: var(--Brown300);
   display: flex;
@@ -27,10 +27,10 @@ body {
   max-height: 100%; /* Ustawiamy maksymalną wysokość kontenera */
 
   border-radius: 15px;
-  padding-top: 20px;
+
   display: flex;
   flex-direction: column;
-
+  margin-top: 50px;
   padding-bottom: 20px; /* Zwiększamy przestrzeń na dole */
 }
 
