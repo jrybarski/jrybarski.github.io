@@ -859,12 +859,11 @@ article {
      }
 
      .logo {
-        margin-right: 5px;
+        margin-right: 10px;
      }
      
-
-     .services {
-        margin-top:50rem;
+     .about {
+        margin-bottom: 20rem;
      }
 
      .services--content {
