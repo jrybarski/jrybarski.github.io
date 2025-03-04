@@ -791,8 +791,13 @@ article {
     .nav--info--values, .svg-icon-check5 {
         visibility: hidden;
     }
+
+    .nav--info {
+        width: 0px;
+        height: 0px;
+    }
     .nav-list {
-        margin-left: -25%;
+        margin-left: -28%;
         width: 100%;
         justify-content: space-around;
     }
@@ -854,7 +859,7 @@ article {
      
 
      .services {
-        margin-top:25rem;
+        margin-top:50rem;
      }
 
      .services--content {
