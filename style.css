@@ -1,10 +1,16 @@
 body {
-    
+    width: 100%;
     background-image: linear-gradient(to right,#661414, #ff3131);
     margin: 0;
     overflow-x: hidden;
     font-family: "Lato";
 }
+
+html, body {
+    overflow-x: hidden; /* Wyłącza przewijanie w prawo */
+    width: 100vw; /* Zapobiega "nadmiernej szerokości" */
+}
+
 
 .container {
     width: 100%;
@@ -751,8 +757,7 @@ article {
 @media (max-width: 32rem) { 
 
     .container {
-        max-width: 500px;
-        min-width: 350px;
+        width: 100%;
     }
 
     .navbar {
@@ -792,7 +797,7 @@ article {
     }
 
     .background {
-        height: 50vh;
+        height: 70vh;
     }
 
     .background-button {
@@ -868,6 +873,29 @@ article {
 
      .footerright {
         font-size: 0.7rem;
+     }
+
+     .navbar {
+        height: 20vh;
+     }
+     .background {
+        height: 80vh;
+     }
+
+     .aboutleft {
+        height: 25vh;
+     }
+
+     .aboutright {
+        height: 75vh;
+     }
+
+     .services--content {
+        height: 60vh;
+     }
+
+     .log {
+        height: 15vh;
      }
 
 
