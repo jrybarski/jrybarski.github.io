@@ -787,6 +787,7 @@ article {
 
     .navbar {
         height: 10vh;
+        margin: 0;
     }
     .nav--info--values, .svg-icon-check5 {
         visibility: hidden;
@@ -925,7 +926,7 @@ article {
      }
 
      .log {
-        height: 4vh;
+        height: 2vh;
      }
 
      .services {
