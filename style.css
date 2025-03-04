@@ -132,6 +132,31 @@ nav {
     z-index: 10;
 }
 
+/* Pozycja startowa: wyśrodkowane logo */
+/* Początkowa pozycja logo – na środku ekranu */
+.logo-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+    z-index: 1000;
+}
+
+/* Gdy dodamy klasę .hide, logo znika */
+.logo-container.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+.logo {
+    width: 150px; /* Dostosuj rozmiar */
+    height: auto;
+    border-radius: 50%;
+}
+
+
 
 .logo-img {
     width: 100%;
