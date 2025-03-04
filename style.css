@@ -857,6 +857,10 @@ article {
      .aboutright h2 {
         margin: 0;
      }
+
+     .logo {
+        margin-right: 5px;
+     }
      
 
      .services {
