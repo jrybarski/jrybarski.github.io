@@ -842,7 +842,7 @@ article {
      }
 
      .log {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
         justify-content: space-around;
      }
 
@@ -876,10 +876,10 @@ article {
      }
 
      .navbar {
-        height: 20vh;
+        height: 12vh;
      }
      .background {
-        height: 80vh;
+        height: 88vh;
      }
 
      .aboutleft {
@@ -895,7 +895,11 @@ article {
      }
 
      .log {
-        height: 15vh;
+        height: 8vh;
+     }
+
+     .services {
+        margin-top: 20vh;
      }
 
 
