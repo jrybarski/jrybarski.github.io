@@ -936,6 +936,10 @@ article {
         margin-top: 70vh;
         margin-bottom: 3vh;
      }
+     .services-list {
+        gap: 5px;
+        
+    }
 
 
 
