@@ -642,6 +642,63 @@ article h3 {
     justify-content: space-between;
     padding: 20px 20px 20px 40px;
 }
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    
+}
+
+.slide {
+    width: 150px;
+    height: 93px;
+    opacity: 0.5;
+    transition: all 0.5s ease-in-out;
+}
+
+.slide.active {
+    width: 500px;
+    height: 309px;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+    border: 3px ridge brown;
+}
+.sliderImg {
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    
+    /* background-color: black; */
+    margin-top: 5vh;
+}
+.prev, .next {
+    margin: 0 5vw 0 5vw;
+    align-self: center;
+    justify-self: end;
+    border-radius: 30%;
+    background-color: black;
+    padding: 3px;
+    border: none;
+    color: white;
+    background: none;
+}
+.prev:hover, .next:hover {
+    cursor: pointer;
+    color: black;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.sliderTitle {
+    color: white;
+    font-size: 2rem;
+    font-family: "Chivo";
+    font-weight: 200;
+    text-align: center;
+    background-image: linear-gradient(to right, #706e6d, #080808, #706e6d ) ;
+    
+}
 
 
 @media (max-width: 75rem) {
@@ -777,6 +834,7 @@ article {
 
     
 }
+
 
 }
 @media (max-width: 32rem) { 
@@ -940,9 +998,63 @@ article {
         gap: 5px;
         
     }
+    .prev, .next {
+        font-size: 2rem;
+        margin: 0 3px 0 3px;
+    }
+    .slider {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        
+    }
+    
+    .slide {
+        width: 60px;
+        height: 38px;
+        opacity: 0.5;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .slide.active {
+        width: 250px;
+        height: 172px;
+        opacity: 1;
+        transition: all 0.5s ease-in-out;
+        border: 3px ridge brown;
+    }
 
 
 
 }
+
+@media (min-width: 40rem) and (max-width:65rem) {
+    .slide {
+        width: 150px;
+        height: 94px;
+    }
+    
+    .slide.active {
+        width: 300px;
+        height: 185px;
+    }
+}
+
+@media (max-width: 42rem) and (min-width: 32rem) {
+
+    .slide {
+        width: 60px;
+        height: 38px;
+    }
+    
+    .slide.active {
+        width: 250px;
+        height: 172px;
+
+    }
+}
+
+
 
 

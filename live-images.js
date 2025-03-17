@@ -21,3 +21,38 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 500); // Logo znika po 2 sekundach
     }
 });
+
+const sliderContainer = document.querySelector('.slider');
+const imagesCount = 4; // Zmień na liczbę dostępnych obrazów
+let currentIndex = 1;
+
+function createSlider() {
+    for (let i = -1; i <= 1; i++) {
+        let img = document.createElement('img');
+        img.src = `assets/slider${getValidIndex(currentIndex + i)}.jpg`;
+        img.classList.add('slide');
+        if (i === 0) img.classList.add('active');
+        sliderContainer.appendChild(img);
+    }
+}
+
+function getValidIndex(index) {
+    if (index < 1) return imagesCount;
+    if (index > imagesCount) return 1;
+    return index;
+}
+
+function updateSlider(direction) {
+    currentIndex = getValidIndex(currentIndex + direction);
+    const slides = document.querySelectorAll('.slide');
+    slides.forEach((slide, i) => {
+        slide.src = `assets/slider${getValidIndex(currentIndex + i - 1)}.jpg`;
+        slide.className = 'slide';
+        if (i === 1) slide.classList.add('active');
+    });
+}
+
+document.querySelector('.prev').addEventListener('click', () => updateSlider(-1));
+document.querySelector('.next').addEventListener('click', () => updateSlider(1));
+
+createSlider();
