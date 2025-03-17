@@ -273,8 +273,8 @@ nav {
 
 
 .motocycle--upper, .motocycle--down {
-    max-width: 370px;
-    max-height: 255px;
+    width: 370px;
+    height: 255px;
 }
 .motocycle--upper {
     z-index: -1;
@@ -402,6 +402,7 @@ nav {
 
 .services {
     height: 85%;
+    border-top: 1px solid #463A35;
 
 }
 .services--content {
@@ -1052,6 +1053,83 @@ article {
         width: 250px;
         height: 172px;
 
+    }
+}
+
+@media (min-width: 100rem){
+    .motocycle--upper, .motocycle--down {
+        width: 450px;
+        height: 278px;
+    }
+    .aboutright h1 {
+        font-size: 4rem;
+    }
+    .aboutright h2 {
+        font-size: 2rem;
+    }
+    .about {
+        margin-bottom: 0;
+    }
+    .services--content h1 {
+        font-size: 3.5rem;
+    }
+    .services--content h2 {
+        font-size: 1.5rem;
+    }
+    .services-list {
+        margin-top: 10vh;
+        margin-bottom: 17vh;
+    }
+    .li--services {
+        font-size: 1.3rem;
+    }
+    article h3 {
+        font-size: 1.2rem;
+    }
+
+    article h1 {
+        font-size: 2.5rem;
+    }
+    #map {
+        height: 650px;
+    }
+    .findusonmap h1 {
+        font-size: 2.5rem;
+    }
+    .svg-icon-check5 {
+        position: relative;
+        left: 70px;
+    }
+    .servicesimg {
+        margin-top: 210px;
+    }
+}
+
+@media(min-width: 119rem) {
+    .svg-icon-check5 {
+        position: relative;
+        left: 85px;
+    }
+    .slide.active {
+        width: 600px;
+        height: 370px;
+    }
+    .slide {
+        width: 250px;
+        height: 124px;
+
+    }
+    .slider {
+        gap: 30px;
+    }
+    .next, .prev {
+        font-size: 2rem;
+    }
+    .lidecription h3 {
+        font-size: 1.5rem;
+    }
+    .lidecription p {
+        font-size: 1.2rem;
     }
 }
 
