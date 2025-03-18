@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 const sliderContainer = document.querySelector('.slider');
-const imagesCount = 4; // Zmień na liczbę dostępnych obrazów
+const imagesCount = 6; // Zmień na liczbę dostępnych obrazów
 let currentIndex = 1;
 
 function createSlider() {
