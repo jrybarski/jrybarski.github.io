@@ -862,6 +862,10 @@ article {
         justify-content: space-around;
     }
 
+    .motocycle--upper {
+        width: 370px;
+        height: 255px;
+    }
     .nav-element:nth-child(1),.nav-element:nth-child(2),.nav-element:nth-child(3),.nav-element:nth-child(4),
     .nav-element:nth-child(5),
     .nav-element:nth-child(6),
