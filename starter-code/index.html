@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/main.js" defer></script>
+    <title>Frontend Mentor | Password generator app</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">Password Generator</div>
+      <div class="password--output">
+        <h1 class="password">XXXXXXXXXXXXX</h1>
+        <img
+          src="assets/images/icon-copy.svg"
+          alt="copy icon"
+          class="copy-icon"
+        />
+      </div>
+      <div class="mainsection">
+        <div class="character--length">
+          <h1>Character Length</h1>
+          <h2 class="character--amount">10</h2>
+        </div>
+        <div class="slider-container">
+          <div class="slider-track" id="slider-track" style="width: 50%"></div>
+          <div class="slider-thumb" id="slider-thumb" style="left: 50%"></div>
+        </div>
+        <div class="radio--inputs">
+          <div class="input-row">
+            <div class="radio--input">
+              <img
+                src="assets/images/icon-check.svg"
+                alt="check icon"
+                class="icon-check-one"
+              />
+            </div>
+            <h1>Include Uppercase Letters</h1>
+          </div>
+          <div class="input-row">
+            <div class="radio--input">
+              <img
+                src="assets/images/icon-check.svg"
+                alt="check icon"
+                class="icon-check-two"
+              />
+            </div>
+            <h1>Include Lowercase Letters</h1>
+          </div>
+          <div class="input-row">
+            <div class="radio--input">
+              <img
+                src="assets/images/icon-check.svg"
+                alt="check icon"
+                class="icon-check-three"
+              />
+            </div>
+            <h1>Include Numbers</h1>
+          </div>
+          <div class="input-row">
+            <div class="radio--input">
+              <img
+                src="assets/images/icon-check.svg"
+                alt="check icon"
+                class="icon-check-four"
+              />
+            </div>
+            <h1>Include Symbols</h1>
+          </div>
+        </div>
+        <div class="strength">
+          <h1>STRENGTH</h1>
+
+          <div class="strengths">
+            <h2 class="strength-level">MEDIUM</h2>
+            <div id="str1" class="strength-visual"></div>
+            <div id="str2" class="strength-visual"></div>
+            <div id="str3" class="strength-visual"></div>
+            <div id="str4" class="strength-visual"></div>
+          </div>
+        </div>
+        <div class="button-generate">
+          <h1>GENERATE</h1>
+          <img
+            src="/starter-code/assets/images/icon-arrow-right.svg"
+            alt="arrow right"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
