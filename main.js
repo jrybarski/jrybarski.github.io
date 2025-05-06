@@ -10,6 +10,7 @@ const strengthLevel2 = document.querySelector("#str2");
 const strengthLevel3 = document.querySelector("#str3");
 const strengthLevel4 = document.querySelector("#str4");
 const copyIcon = document.querySelector(".copy-icon");
+const strengthLevel = document.querySelector(".strength-level");
 
 const min = 4;
 const max = 16;
@@ -89,15 +90,19 @@ function checkingStrenght() {
     strengthLevel2.style.backgroundColor = "purple";
     strengthLevel3.style.backgroundColor = "purple";
     strengthLevel4.style.backgroundColor = "purple";
+    strengthLevel.innerHTML = "V. STRONG";
   } else if (count > 2 && currentValue > 10) {
     strengthLevel1.style.backgroundColor = "red";
     strengthLevel2.style.backgroundColor = "red";
     strengthLevel3.style.backgroundColor = "red";
+    strengthLevel.innerHTML = "STRONG";
   } else if (count > 1 && currentValue > 8) {
     strengthLevel1.style.backgroundColor = "orange";
     strengthLevel2.style.backgroundColor = "orange";
+    strengthLevel.innerHTML = "MEDIUM";
   } else if (count >= 1 && currentValue > 6) {
     strengthLevel1.style.backgroundColor = "green";
+    strengthLevel.innerHTML = "WEAK";
   }
 }
 
